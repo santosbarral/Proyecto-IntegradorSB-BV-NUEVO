@@ -87,3 +87,17 @@ header{
     width: 250px;
     border-radius: 6px;
 }
+
+.botoncarrito {
+    padding: 10px;
+    background-color: #345375;
+    color: #fff;
+    border-radius: 20px;
+    
+}
+.botonvermas {
+    padding: 10px;
+    background-color: #0c1822;
+    color: rgb(255, 255, 255);
+    border-radius: 20px
+}
