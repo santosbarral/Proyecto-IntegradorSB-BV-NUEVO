@@ -1,0 +1,89 @@
+body {
+    background-color: #425c89;
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    margin: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    border: #1a1a1a 5px solid;
+    font-family:'Segoe UI';
+    border-radius: 6px;
+}
+
+.nombresFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: #000000 3px dashed;
+    margin: 2%;
+    padding-top: 25px;
+    font-size: larger;
+    font-weight: 550;
+}
+
+.Homenav {
+    color: black;
+    text-decoration: none;
+    font-family: "Helvetica";
+    font-weight: bolder;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; 
+    background-color:#636afa;
+    padding: 20px 20px 5px 20px;
+    border-radius: 6px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+    margin-top: 25px;
+    font-size: large;
+
+}
+
+.sectiondiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; 
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px 20px 5px 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+.liNav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.producto{
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+.imgB{
+    height: 230px;
+    width: 250px;
+    border-radius: 6px;
+}
