@@ -101,3 +101,60 @@ header{
     color: rgb(255, 255, 255);
     border-radius: 20px
 }
+
+.login {
+    justify-content: space-around; 
+    width: 50%;
+    font-size: large;
+    font-weight: 700;
+    background: #8f8080;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.boton2{
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+}
+.redireccionlinks {
+    display: flex;
+    justify-content: space-around;
+}
+/* Cuenta */
+
+.DR {
+    text-align: center;
+    font-weight: 600;
+}
+
+.sectiondiv1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: #1a1a1a;
+    padding: 20px 20px 5px 20px;
+    color: white;
+    border-radius: 8px;
+}
+.productodetalles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgdetalles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.divdetalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
