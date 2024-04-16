@@ -124,7 +124,6 @@ header{
     display: flex;
     justify-content: space-around;
 }
-/* Cuenta */
 
 .DR {
     text-align: center;
@@ -157,4 +156,60 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+
+@media  (max-width: 500px) {
+
+    body{
+        background-color: #425c89;
+        
+    }
+    .logoTB{
+        max-height: 10vh;
+        width: 85px;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        height: fit-content;
+        width: 450px;
+        border-radius: 6px;
+    }
+    .section {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+    }
+    .sectiondiv{
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+
+    }
+    .main{
+        border: #211d1d dotted 2px;
+        padding: 10px;
+    }
+    
+    .header{
+        flex-direction: column;
+        max-height: 25vh;
+    }
+    .liNav{
+        flex-direction: column;
+        font-size: small;
+  
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .imgB{
+        max-height: 220px;
+        max-width: 180px;
+    }
+
+
 }
