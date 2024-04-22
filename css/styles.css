@@ -182,3 +182,77 @@ header{
     color: #fff;
     border-radius: 20px;
 }
+
+@media  (max-width: 500px) {
+
+    .body{
+        background-color: #031535;
+        margin: 15px;
+        
+    }
+
+    .logoTB{
+        width: 0px;
+        height: 0px;
+    }
+    .login{
+        width: 100%;
+    }
+    .imgDetalles {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 250px;
+    }
+    .divdetalles{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0PX;
+    }
+    .caja{
+        margin: 10px;
+        padding-top: 15px;
+        border-top: #636afa solid 6px;
+        border-bottom: #636afa solid 6px;
+    } 
+
+    .header{
+        display: flex;
+        background-color: grey;
+        border: #1a1a1a 5px solid;
+        font-family: 'Segoe UI';
+        border-radius: 6px;
+        flex-direction: column;
+    }
+    .botoncarrito {
+        padding: 10px 60px 10px 60px;
+    }
+    .botonvermas{
+        padding: 10px 50px 10px 50px;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main{
+        border: #683636 dotted 2px;
+        padding: 10px;
+    }
+    .liNav{
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: small;
+    }
+    .sectiondiv{
+        background-color: #00000068;
+    }
+    .imgB{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 280px;
+    }
+}
