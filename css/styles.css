@@ -1,6 +1,7 @@
 body {
-    background-color: #425c89;
+    background-color: #263b61;
     font-family: 'Poppins', sans-serif;
+    margin: 6px;
 }
 .main {
     margin: 30px;
@@ -40,8 +41,9 @@ header{
     flex-direction: row;
     justify-content: space-around; 
     background-color:#636afa;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
     border-radius: 6px;
+    margin-top: 15px;
 }
 
 .nav{
@@ -128,6 +130,12 @@ header{
 .DR {
     text-align: center;
     font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tbfooter {
+    text-align: center;
+    font-weight: 600;
 }
 
 .sectiondiv1{
@@ -136,9 +144,10 @@ header{
     flex-direction: row;
     justify-content: space-between; 
     background-color: #1a1a1a;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 30px 20px;
     color: white;
     border-radius: 8px;
+
 }
 .productodetalles{
     display: flex;
@@ -146,70 +155,30 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.imgdetalles {
+.imgDetalles {
+    width: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+
 }
 .divdetalles{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 160px;
+    font-size: x-large;
 }
 
-
-@media  (max-width: 500px) {
-
-    body{
-        background-color: #425c89;
-        
-    }
-    .logoTB{
-        max-height: 10vh;
-        width: 85px;
-        justify-content: center;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        background-color: grey;
-        height: fit-content;
-        width: 450px;
-        border-radius: 6px;
-    }
-    .section {
-        display: flex;
-        height: fit-content;
-        width: fit-content;
-    }
-    .sectiondiv{
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-
-    }
-    .main{
-        border: #211d1d dotted 2px;
-        padding: 10px;
-    }
-    
-    .header{
-        flex-direction: column;
-        max-height: 25vh;
-    }
-    .liNav{
-        flex-direction: column;
-        font-size: small;
-  
-    }
-    .nav{
-        flex-direction: column;
-    }
-    .imgB{
-        max-height: 220px;
-        max-width: 180px;
-    }
-
-
+.Botoncomprar {
+    background-color: #345375;
+    padding: 10px 90px 10px 90px;
+    color: #fff;
+    border-radius: 20px;
 }
