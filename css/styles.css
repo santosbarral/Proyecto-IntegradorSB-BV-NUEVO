@@ -34,6 +34,19 @@ header{
     font-family: "Helvetica";
     font-weight: bolder;
 }
+.Homenavborrariniciado1 {
+    color: rgb(38, 65, 133);
+    text-decoration: none;
+    font-family: "Helvetica";
+    font-weight: bolder;
+    border-left-color: #000000;
+}
+.Homenavborrariniciado2 {
+    color: black;
+    text-decoration: none;
+    font-family: "Helvetica";
+    font-weight: bolder;
+}
 
 .section{
     display: flex;
@@ -53,7 +66,7 @@ header{
     justify-content: space-around;
     width: 80vw;
     margin-top: 25px;
-    font-size: large;
+    font-size: medium;
 
 }
 
@@ -106,13 +119,13 @@ header{
 
 .login {
     justify-content: space-around; 
-    width: 50%;
+    width: 80%;
     font-size: large;
     font-weight: 700;
     background: #8f8080;
     border-radius: 10px;
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
