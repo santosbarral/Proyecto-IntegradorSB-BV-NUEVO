@@ -27,3 +27,16 @@ fetch(`https://fakestoreapi.com/products/category/${category}`)
         console.log(error);
     })
 
+
+let recuperouser = localStorage.getItem('user');
+let datalogin = JSON.parse(recuperouser);
+let usuario = document.querySelector('.Homenavborrariniciado1');
+let loginlogout = document.querySelector('.Homenavborrariniciado2')
+let logouth1 = document.querySelector('.logouttitulo')
+if (datalogin != null) {
+    objetoUsuario =datalogin;
+    //Caputro dom y con for muestro la lista
+    usuario.innerHTML = `<a>Bienvenido! ${objetoUsuario.email}</a>`
+    loginlogout.innerHTML = `<a class ='Homenavborrariniciado1' href="logout.html">Logout<a>`
+}else {
+}
