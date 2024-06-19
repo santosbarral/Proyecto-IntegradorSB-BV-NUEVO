@@ -1,26 +1,46 @@
+let Qstring = location.search;
+let data = new URLSearchParams(Qstring);
+let ID = data.get("id");
+let JGaStr;
+let Listaid = [];
+let ulcarrito = document.querySelector('.ulcarrito');
 
-let recuperarcarrito = localStorage.getItem('carrito');
-let data = JSON.parse(recuperarcarrito);
-let ulcarrito = document.querySelector('.ulcarrito')
-
-console.log(data);
-if (data !=/*no es nulo */ null) {
-    for (let i = 0; i < 5; i++) {
-        carrito = data[i]
-
-        console.log(carrito);
-
-
-    }
-    ulcarrito.innerHTML =
-    `
-    <h3> ${data.title} </h3>
-    <img src= "${data.image}" alt=''</img>
-    <p> Precio: ${data.price} </p>
-    `     
+if(Listaid.length === 0) {
+    ulcarrito.innerHTML = '<p>El carrito está vacío</p>';
+    //Para cuando el carrito esta vacio//
 }
-//Falta hacerlo iterar//
+if(localStorage.getItem('carrito') !== null) {
+    JGaStr = localStorage.getItem('carrito');
+    Listaid = JSON.parse(JGaStr);
+}
+if(ID !== null && /*&& sirve como y, admeas el ! es de negacion */ !Listaid.includes(ID)) {
+    Listaid.push(ID);
+}
+else
+localStorage.setItem('carrito', JSON.stringify(Listaid));
+let carrito = "";
+    for (let i = 0; i < Listaid.length; i++) {
+        fetch(`https://fakestoreapi.com/products/${Listaid[i]}`)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                carrito += `
+                <li>
+                    <h3>${data.title}</h3>
+                    <img src="${data.image}" alt="${data.title}" width="100">
+                    <p>Precio: $${data.price}</p>
+                </li>`;
+                ulcarrito.innerHTML = carrito;
+            
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+    }
 
+
+//Log in (Mismo que el de la clase)//
 let recuperouser = localStorage.getItem('user');
 let datalogin = JSON.parse(recuperouser);
 let usuario = document.querySelector('.Homenavborrariniciado1');

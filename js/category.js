@@ -15,10 +15,13 @@ fetch(`https://fakestoreapi.com/products/category/${category}`)
         for (let i = 0; i < data.length; i++) {
             detalle +=
                 `
-                <h2 class="section">Category: ${category}</h2>
+                <h2 class="section">${category}</h2>
+                <section>
                 <h3>${data[i].title}</h3>
                 <img src= "${data[i].image}" alt=''</img>
                 <h4>${data[i].description}</h4>
+                </section>
+                
                 `
             }
         cat.innerHTML = detalle;
@@ -27,7 +30,8 @@ fetch(`https://fakestoreapi.com/products/category/${category}`)
         console.log(error);
     })
 
-
+    
+//Log in (Mismo que el de la clase)//
 let recuperouser = localStorage.getItem('user');
 let datalogin = JSON.parse(recuperouser);
 let usuario = document.querySelector('.Homenavborrariniciado1');

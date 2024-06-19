@@ -27,7 +27,8 @@ fetch(urlRopaHombre)
         console.log(error);
     })
 
-
+    
+//Log in (Mismo que el de la clase)//
 let recuperouser = localStorage.getItem('user');
 let datalogin = JSON.parse(recuperouser);
 let usuario = document.querySelector('.Homenavborrariniciado1');

@@ -21,4 +21,3 @@ form.addEventListener("submit",function (e) {
         //Averiguar como hacer una redireccion al home//
     }
 })
-

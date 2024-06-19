@@ -12,16 +12,17 @@ fetch(urlJewelry)
         for (let i = 0; i < data.length; i++){
             productos += ` <div class="producto">
                 <img src="${data[i].image}" alt="img" class="imgB" id="imgproducto">
-                <h2>${data[i].title}</h2>
-                <p>${data[i].description}</p>
+                <h3>${data[i].title}</h3>
+                <h4>${data[i].description}</h4>
                 <p>Precio: ${data[i].price}</p>
                 <button type="submit" class="botonvermas">
+                
                     <a href="../Html/producto.html?id=${data[i].id}">Ver más</a> 
                 </button> 
             </div>`;
         }
         productosJewelry.innerHTML = productos
-})//Aca hay que chequear como hacer el detalles de cada producto 
+})
     .catch(function(error){
         console.log(error);
     })
@@ -85,6 +86,7 @@ fetch(urlRopaMujer)
     })
 
 
+//Log in (Mismo que el de la clase)//
 let recuperouser = localStorage.getItem('user');
 let datalogin = JSON.parse(recuperouser);
 let usuario = document.querySelector('.Homenavborrariniciado1');
@@ -92,7 +94,7 @@ let loginlogout = document.querySelector('.Homenavborrariniciado2')
 let logouth1 = document.querySelector('.logouttitulo')
 if (datalogin != null) {
     objetoUsuario =datalogin;
-    //Caputro dom y con for muestro la lista
+    //Caputro dom y con for muestro la lista//
     usuario.innerHTML = `<a>Bienvenido! ${objetoUsuario.email}</a>`
     loginlogout.innerHTML = `<a class ='Homenavborrariniciado1' href="logout.html">Logout<a>`
 }else {

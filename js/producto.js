@@ -2,7 +2,7 @@ let Qstring = location.search
 let data = new URLSearchParams(Qstring);
 let ID = data.get("id");
 let endpoint = `https://fakestoreapi.com/products/${ID}`
-let carrito ={}
+
 
 fetch(endpoint)
     .then(function (response) {
@@ -23,22 +23,31 @@ fetch(endpoint)
              `;
         detalleProducto.innerHTML = detalle
 
-        //Para agregar al carrito los articulos//
-        let botoncarrito = document.querySelector('.botoncarrito')
-        botoncarrito.addEventListener('click',function (e) {
+        //Para agregar los productos al carrito//
+        let botoncarrito = document.querySelector('.botoncarrito');
+            botoncarrito.addEventListener('click', function(e) {
             e.preventDefault();
-            carrito = data;
-            console.log(carrito);
-            localStorage.setItem('carrito', JSON.stringify(carrito))
-        })
 
+            let idProducto = data.id; 
+            let carrito;
+
+            if (localStorage.getItem('carrito') !== null) {
+                carrito = JSON.parse(localStorage.getItem('carrito'));
+            }else {
+                carrito = [];
+            } 
+            if (/*-!-es de negacion*/!carrito.includes(idProducto)) {
+                carrito.push(idProducto);
+            }
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            console.log(carrito);
+            })
     })
     .catch(function (error) {
         console.log(error);
     })
 
-
-    
+//Log in (Mismo que el de la clase)//
 let recuperouser = localStorage.getItem('user');
 let datalogin = JSON.parse(recuperouser);
 let usuario = document.querySelector('.Homenavborrariniciado1');
