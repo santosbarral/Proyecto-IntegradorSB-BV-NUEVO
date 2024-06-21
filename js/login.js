@@ -18,7 +18,6 @@ form.addEventListener("submit",function (e) {
         user.password = pass.value;
         localStorage.setItem('user', JSON.stringify(user))
         this.submit();
-        //Averiguar como hacer una redireccion al home//
+        window.location = "index.html";
     }
 })
-
