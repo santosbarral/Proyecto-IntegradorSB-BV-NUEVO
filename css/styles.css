@@ -15,7 +15,10 @@ header{
     font-family:'Segoe UI';
     border-radius: 6px;
 }
-
+.product1{
+    display: block;
+    flex-direction: row;
+}
 .nombresFooter{
     display: flex;
     flex-direction: row;
@@ -35,11 +38,10 @@ header{
     font-weight: bolder;
 }
 .Homenavborrariniciado1 {
-    color: rgb(38, 65, 133);
+    color: black;
     text-decoration: none;
     font-family: "Helvetica";
     font-weight: bolder;
-    border-left-color: #000000;
 }
 .Homenavborrariniciado2 {
     color: black;
@@ -92,17 +94,59 @@ header{
     display: flex;
     flex-direction: row;
 }
-
-.producto{
-    padding-bottom: 30px;
+.divtituloh2 {
+    display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
+    font-family: system-ui;
+    border-bottom: #5d437e 6px solid;
+}
+.divproducto{
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+.divprecio{
+    display: flex;
+    flex-direction: row;
+}
+.divconcatenado{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+.producto{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #3b2473 5px solid;
+    padding-bottom: 10px;
+    margin-top: 25px;
+
+}
+.divpreciotboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 55px;
 }
 .imgB{
-    height: 230px;
+    display: flex;
+    height: 250px;
     width: 250px;
     border-radius: 6px;
 }
-
+.datadescription{
+    font-size: 22px;
+    margin-left: 30px;
+    font-family:Helvetica;
+    padding-bottom: 12px;
+}
+.precio{
+    font-size: 22px;
+    font-family: 'Times';
+    font-weight: bolder;
+}
 .botoncarrito {
     padding: 10px;
     background-color: #345375;
@@ -110,13 +154,27 @@ header{
     border-radius: 20px;
     
 }
+.asincolor{
+    color: #fff;
+}
 .botonvermas {
     padding: 10px;
     background-color: #0c1822;
     color: rgb(255, 255, 255);
-    border-radius: 20px
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
+.datapreciocat{
+    display: flex;
+    flex-direction: column;
+    
+}
+.datapreciocat1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .login {
     justify-content: space-around; 
     width: 80%;
@@ -129,7 +187,14 @@ header{
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
+.carritovacio{
+    font-size: 25px;
+    font-family: system-ui;
+    font-weight: bolder;
+}
+.ulcarrito{
+    padding: 0px;
+}
 .boton2{
     width: 100px;
     height: 30px;
@@ -168,19 +233,6 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.imgDetalles {
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 40px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    border-radius: 15px;
-
-}
 .divdetalles{
     display: flex;
     flex-direction: column;
@@ -194,4 +246,13 @@ header{
     padding: 10px 90px 10px 90px;
     color: #fff;
     border-radius: 20px;
+}
+.logouttitulo{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+.centrarvolveralinico{
+    text-align: center;
 }

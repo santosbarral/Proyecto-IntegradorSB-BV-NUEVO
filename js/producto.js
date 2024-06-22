@@ -14,13 +14,24 @@ fetch(endpoint)
         let detalleProducto = document.querySelector(".productodetalles")
         let detalle =
             ` 
-            <img src= "${data.image}" alt=''</img>
-            <h3> ${data.title} </h3>
-            <h4> ${data.description} </h4>
-            <h4> Categoría:<a href="./category.html?categories=${data.category}">${data.category}</a></h4>
-            <p> Precio: ${data.price} </p>
-            <a href="./cart.html"><button class="botoncarrito">Agregar al carrito</button></a>
-             `;
+            <div class="producto">
+                    <img src="${data.image}" alt="img" class="imgB" id="imgproducto">
+                <div class="divproducto">
+                    <div class="divtituloh2">
+                        <h2 class="">${data.title}</h2>
+                    </div> 
+                    <div class="datapreciocat">
+                        <h4 class="datadescription">${data.description}</h4>
+                        <div class="datapreciocat1">
+                            <h4 class="datadescription" >Categoría: <a class="asincolor" href="./category.html?categories=${data.category}"> ${data.category}</a></h4>
+                            <p class="precio"> Precio: ${data.price} </p>
+                            <a href="./cart.html"><button class="botoncarrito">Agregar al carrito</button></a>
+                        </div> 
+                    </div> 
+                </div> 
+            </div>
+            ` 
+            ;
         detalleProducto.innerHTML = detalle
 
         //Para agregar los productos al carrito//
@@ -33,6 +44,8 @@ fetch(endpoint)
 
             if (localStorage.getItem('carrito') !== null) {
                 carrito = JSON.parse(localStorage.getItem('carrito'));
+                botoncarrito.innerHTML =
+                `Producto Agregado`
             }else {
                 carrito = [];
             } 

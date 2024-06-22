@@ -11,15 +11,24 @@ fetch(urlRopaHombre)
         let ProductosRopaHombre = document.querySelector(".hombreProductos")
         let productos = [];
         for (let i = 0; i < data.length; i++){
-            productos += `<div class="producto">
-                <img src="${data[i].image}" alt="img" class="imgB" id="imgproducto">
-                <h2>${data[i].title}</h2>
-                <p>${data[i].description}</p>
-                <p>Precio: ${data[i].price}</p>
-                <button type="submit" class="botonvermas">
-                    <a href="../Html/producto.html?id=${data[i].id}">Ver más</a>
-                </button>
-            </div>`;
+            productos +=
+            ` 
+                <div class="producto">
+                        <img src="${data[i].image}" alt="img" class="imgB" id="imgproducto">
+                    <div class="divproducto">
+                        <div class="divtituloh2">
+                            <h2 class="">${data[i].title}</h2>
+                        </div> 
+                        <h4 class="datadescription">${data[i].description}</h4>
+                        <div class="divpreciotboton">
+                            <p class="precio">Precio: ${data[i].price}$</p>
+                            <button type="button" class="botonvermas">
+                                <a href="../Html/producto.html?id=${data[i].id}">Ver más</a>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            `;
         }
         ProductosRopaHombre.innerHTML = productos
 })
